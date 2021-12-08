@@ -253,6 +253,7 @@ public class CreateTables {
 		query.append("EmployeeID Integer, ");
 		query.append("service_type varchar2(64), ");
 		query.append("success Integer, "); // 0 true, 1 false 
+		query.append("process Integer, "); // 0 true, 1 false
 		query.append("primary key (username, time), ");
 		query.append("FOREIGN KEY (username) REFERENCES client(username) "
 				+ "ON DELETE CASCADE , ");
